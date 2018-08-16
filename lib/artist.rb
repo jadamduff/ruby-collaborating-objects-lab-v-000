@@ -24,6 +24,6 @@ class Artist
       end
     end
       artist = Artist.new(name)
-      artist.flatten.save
+      artist.save
   end
 end
