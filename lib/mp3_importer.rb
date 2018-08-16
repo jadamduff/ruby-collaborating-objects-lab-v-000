@@ -8,7 +8,7 @@ class MP3Importer
   def files
     @files = Dir.entries(@path)
     @files.each_with_index do |file, index|
-      if !file.match(/\w/)
+      if file == "." || file == ".."
         @files.delete(index)
       end
     end
