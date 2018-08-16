@@ -8,7 +8,7 @@ class Song
 
   def self.new_by_filename(filename)
     filename = normalize_filename(filename)
-    self = self.new(filename[1])
+    song = self.new(filename[1])
   end
 
   def self.normalize_filename(filename)
