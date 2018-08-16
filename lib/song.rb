@@ -16,7 +16,7 @@ class Song
     file_cabinet
   end
 
-  def artist=(name)
+  def artist=(artist)
     if (self.artist.nil?)
       self.artist = Artist.new(name)
     else
