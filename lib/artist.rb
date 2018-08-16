@@ -21,8 +21,8 @@ class Artist
     if self.all.include?(name)
       return artist.name
     else
-      self.new(name)
-      self.save
+      artist = self.new(name)
+      artist.save
     end
   end
 end
