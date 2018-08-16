@@ -23,7 +23,7 @@ class Artist
         return artist
       end
     end
-      artist = self.new(name)
+      artist = Artist.new(name)
       artist.save
   end
 end
