@@ -23,7 +23,7 @@ class Artist
         return artist
       end
     end
-      artist = Artist.new(name)
+      artist = Artist.new(name).flatten
       artist.save
   end
 end
