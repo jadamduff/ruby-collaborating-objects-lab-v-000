@@ -11,6 +11,7 @@ class MP3Importer
       if !file.include?(/\w/)
         @files.delete(index)
       end
+    end
     @files
   end
 end
