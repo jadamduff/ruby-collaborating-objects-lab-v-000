@@ -23,7 +23,7 @@ class Artist
         return artist
       end
     end
-      artist = Artist.new(name)[0]
+      artist = Artist.new(name)
       artist.save
   end
 end
