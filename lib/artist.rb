@@ -3,11 +3,12 @@ class Artist
   @@all = []
   def initialize(name)
     @name = name
+    @songs = []
     self.save
   end
 
   def songs
-
+    @songs
   end
 
   def self.all
