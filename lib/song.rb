@@ -9,7 +9,6 @@ class Song
   def self.new_by_filename(filename)
     filename = normalize_filename(filename)
     self.new(filename[1])
-    self.artist.name = (filename[0])
   end
 
   def self.normalize_filename(filename)
