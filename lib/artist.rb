@@ -18,9 +18,11 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if self.all.include?(name)
-      return name
-    else
+    self.all.each do |artist|
+      if artist[:name] == name
+        return artist
+      end
+    end
       artist = self.new(name)
       artist.save
     end
